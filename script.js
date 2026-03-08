@@ -83,4 +83,73 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // --- Research Infinite Carousel ---
+    const track = document.getElementById('researchTrack');
+    const prevBtn = document.getElementById('researchPrev');
+    const nextBtn = document.getElementById('researchNext');
+
+    if (track && prevBtn && nextBtn) {
+        const slides = track.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+        let currentIndex = 0;
+
+        function getVisibleCount() {
+            const width = window.innerWidth;
+            if (width <= 768) return 1;
+            if (width <= 992) return 2;
+            return 3;
+        }
+
+        function updateCarousel() {
+            const visibleCount = getVisibleCount();
+            const slideWidthPercent = 100 / visibleCount;
+            const offset = -(currentIndex * slideWidthPercent);
+            track.style.transform = `translateX(${offset}%)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            const visibleCount = getVisibleCount();
+            const maxIndex = Math.max(0, totalSlides - visibleCount);
+            currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            const visibleCount = getVisibleCount();
+            const maxIndex = Math.max(0, totalSlides - visibleCount);
+            currentIndex = currentIndex <= 0 ? maxIndex : currentIndex - 1;
+            updateCarousel();
+        });
+
+        // Re-compute on resize 
+        window.addEventListener('resize', () => {
+            updateCarousel();
+        });
+
+        // Horizontal scroll / trackpad swipe to cycle cards
+        const viewport = document.querySelector('.carousel-viewport');
+        let isScrolling = false;
+
+        viewport.addEventListener('wheel', (e) => {
+            if (Math.abs(e.deltaX) < 10 || isScrolling) return;
+
+            e.preventDefault();
+            isScrolling = true;
+
+            const visibleCount = getVisibleCount();
+            const maxIndex = Math.max(0, totalSlides - visibleCount);
+
+            if (e.deltaX > 0) {
+                currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
+            } else {
+                currentIndex = currentIndex <= 0 ? maxIndex : currentIndex - 1;
+            }
+            updateCarousel();
+
+            setTimeout(() => { isScrolling = false; }, 500);
+        }, { passive: false });
+
+        updateCarousel();
+    }
 });
