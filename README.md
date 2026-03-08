@@ -1,6 +1,6 @@
-# Qasim Ayub | Mobile App Developer Portfolio
+# Qasim Ayub | AI & Software Engineer Portfolio
 
-A sleek, minimalistic, and high-performance static portfolio website built entirely with modern HTML, CSS, and Vanilla JavaScript.
+A sleek, minimalistic, and high-performance static portfolio website built entirely with modern HTML, CSS, and Vanilla JavaScript. Tailored for a research-focused professional specializing in Machine Learning, AI, and Full-Stack Development.
 
 ## Features
 - **Premium Dark Mode UI**: Built with carefully chosen colors (`#0d0d12` base) and custom CSS properties.
@@ -17,7 +17,7 @@ Since this is a static website, you do not need a complex build pipeline.
 You can easily host this portfolio for free using GitHub Pages.
 
 1. **Initialize Repository**:
-   - Create a new public repository on your GitHub account (e.g., `qasimayub.github.io` or `portfolio`).
+   - Create a new public repository on your GitHub account.
    - Push these files (`index.html`, `styles.css`, `script.js`, `assets/`) to the `main` branch of that repository.
 
 2. **Enable GitHub Pages**:
@@ -29,7 +29,7 @@ You can easily host this portfolio for free using GitHub Pages.
 3. **Wait for Deployment**:
    - Wait 1-2 minutes for the GitHub Actions pipeline to build and deploy your site.
    - You can track the progress in the **Actions** tab.
-   - Once completed, your live URL will be shown at the top of the Pages settings site (typically `https://<yourusername>.github.io/<reponame>`).
+   - Once completed, your live URL will be shown at the top of the Pages settings site.
 
 ## Customization
 - **Images**: Replace the placeholder images in `assets/images` with your actual screenshots.

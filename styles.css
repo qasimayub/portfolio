@@ -40,7 +40,7 @@ body {
     width: 60vw;
     height: 60vw;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, rgba(139,92,246,0.05) 40%, rgba(13,13,18,0) 70%);
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.05) 40%, rgba(13, 13, 18, 0) 70%);
     filter: blur(80px);
     z-index: -1;
     pointer-events: none;
@@ -49,11 +49,13 @@ body {
 .blob-2 {
     top: 50%;
     left: -10%;
-    background: radial-gradient(circle, rgba(56,189,248,0.1) 0%, rgba(99,102,241,0.05) 50%, rgba(13,13,18,0) 70%);
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.1) 0%, rgba(99, 102, 241, 0.05) 50%, rgba(13, 13, 18, 0) 70%);
 }
 
 /* Typography Elements */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     line-height: 1.2;
     font-weight: 700;
 }
@@ -90,7 +92,8 @@ ul {
     padding: 2.5rem;
 }
 
-.btn-primary, .btn-secondary {
+.btn-primary,
+.btn-secondary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -146,15 +149,17 @@ ul {
 }
 
 /* Layout */
-nav, section, footer {
+nav,
+section,
+footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
 section {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 /* Navbar */
@@ -275,7 +280,7 @@ section {
     position: relative;
     border-radius: 30px;
     padding: 10px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.02));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
     backdrop-filter: blur(10px);
 }
 
@@ -285,7 +290,7 @@ section {
     height: auto;
     border-radius: 20px;
     object-fit: cover;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* About Section */
@@ -380,8 +385,8 @@ section {
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    border-color: rgba(255,255,255,0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.15);
 }
 
 .project-image-container {
@@ -471,6 +476,164 @@ section {
 .project-description {
     color: var(--text-muted);
     font-size: 0.95rem;
+}
+
+/* Experience Section */
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.experience-item {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.exp-header h3 {
+    font-size: 1.3rem;
+}
+
+.exp-company {
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: var(--accent-1);
+    background: rgba(99, 102, 241, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+}
+
+.exp-date {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.experience-item p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Coursework Section */
+.coursework-container {
+    margin-bottom: 0;
+}
+
+.coursework-container h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--card-border);
+}
+
+.coursework-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.coursework-chip {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-main);
+    background: rgba(139, 92, 246, 0.12);
+    border: 1px solid rgba(139, 92, 246, 0.25);
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.coursework-chip:hover {
+    background: rgba(139, 92, 246, 0.22);
+    border-color: rgba(139, 92, 246, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Research & Project Badges */
+.research-badge {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    max-width: 100%;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #a78bfa;
+    background: rgba(167, 139, 250, 0.1);
+    border: 1px solid rgba(167, 139, 250, 0.25);
+    padding: 0.25rem 0.8rem;
+    border-radius: 20px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.project-status-badge {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    max-width: 100%;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #34d399;
+    background: rgba(52, 211, 153, 0.1);
+    border: 1px solid rgba(52, 211, 153, 0.25);
+    padding: 0.25rem 0.8rem;
+    border-radius: 20px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.project-status-badge.company-badge {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+    border-color: rgba(56, 189, 248, 0.25);
+}
+
+/* Card Repo Link */
+.card-repo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    transition: all 0.3s ease;
+}
+
+.card-repo-link:hover {
+    color: var(--text-main);
+    transform: translateX(4px);
+}
+
+.card-repo-link svg {
+    flex-shrink: 0;
 }
 
 /* Contact Section */
