@@ -380,13 +380,6 @@ section {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    border-color: rgba(255, 255, 255, 0.15);
 }
 
 .project-image-container {
@@ -400,50 +393,6 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.project-card:hover .project-image-container img {
-    transform: scale(1.05);
-}
-
-.project-links-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(13, 13, 18, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.project-card:hover .project-links-overlay {
-    opacity: 1;
-}
-
-.round-btn {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: var(--text-main);
-    color: var(--bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(20px);
-    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.project-card:hover .round-btn {
-    transform: translateY(0);
-}
-
-.round-btn:hover {
-    transform: scale(1.1) !important;
 }
 
 .project-info {
@@ -476,6 +425,7 @@ section {
 .project-description {
     color: var(--text-muted);
     font-size: 0.95rem;
+    flex-grow: 1;
 }
 
 /* Experience Section */
@@ -646,7 +596,8 @@ a.research-badge:hover::after {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    margin-top: 1rem;
+    margin-top: auto;
+    padding-top: 1rem;
     font-size: 0.85rem;
     font-weight: 600;
     color: var(--text-muted);
@@ -753,6 +704,16 @@ footer {
 
 .carousel-slide .project-card {
     height: 100%;
+}
+
+.carousel-slide .project-title {
+    min-height: 3.6rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.carousel-slide .research-badge {
+    min-height: 1.8rem;
 }
 
 .carousel-controls {
