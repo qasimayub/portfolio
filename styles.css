@@ -613,6 +613,130 @@ a.research-badge:hover::after {
     flex-shrink: 0;
 }
 
+/* AI Industry Projects Section */
+.ai-projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.ai-project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.ai-project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.12);
+    border-color: rgba(99, 102, 241, 0.25);
+}
+
+.ai-project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.ai-type-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    padding: 0.3rem 0.9rem;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.ai-project-divider {
+    height: 1px;
+    background: var(--card-border);
+}
+
+.ai-project-body {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.ai-highlights h4,
+.ai-tech-col h4 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 0.9rem;
+}
+
+.ai-highlights ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    list-style: none;
+}
+
+.ai-highlights ul li {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.ai-highlights ul li::before {
+    content: '▹';
+    color: var(--accent-1);
+    position: absolute;
+    left: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.ai-highlights ul li code {
+    font-family: monospace;
+    font-size: 0.82rem;
+    color: #a78bfa;
+    background: rgba(167, 139, 250, 0.1);
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-chip {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--card-border);
+    padding: 0.3rem 0.75rem;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.tech-chip:hover {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: rgba(99, 102, 241, 0.3);
+}
+
+@media (max-width: 900px) {
+    .ai-project-body {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Contact Section */
 .contact-card {
     text-align: center;
