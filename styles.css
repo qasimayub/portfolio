@@ -99,10 +99,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .news p { margin: 0; }
 
 /* Interests */
-.interests { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-.interests div { border-top: 3px solid var(--accent); padding-top: 1rem; }
-.interests h3 { font: 600 1.05rem var(--serif); margin-bottom: .4rem; }
-.interests p { font-size: .92rem; color: var(--muted); margin: 0; }
 
 /* ---------- Publications ---------- */
 /* Figure floats left so the text wraps around and under it */
@@ -265,7 +261,7 @@ a.card:hover h3 { color: var(--accent); }
   .nav a { padding: .7rem 0; border-bottom: 1px solid var(--line); }
   .nav a.is-active { border-bottom-color: var(--line); color: var(--accent); }
   .intro { grid-template-columns: 200px 1fr; gap: 2rem; }
-  .interests, .case-cols, .case-body { grid-template-columns: 1fr; gap: 1.2rem; }
+  .case-cols, .case-body { grid-template-columns: 1fr; gap: 1.2rem; }
   .cards { grid-template-columns: repeat(2, 1fr); }
 }
 
