@@ -1,429 +1,292 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qasim Ayub | AI & Software Engineer</title>
-    <meta name="description" content="Portfolio of M. Qasim Ayub, a research-focused Software Engineer with expertise in Machine Learning, AI, and Full-Stack Development.">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Muhammad Qasim Ayub is a computer science researcher at LUMS working on grounded vision-language reasoning, interpretable machine learning for protein biology, and open-set federated learning.">
+  <title>Muhammad Qasim Ayub · Machine Learning Research</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="blob-bg"></div>
-    <div class="blob-bg blob-2"></div>
-    
-    <nav class="navbar">
-        <div class="nav-content">
-            <a href="#" class="logo">QA<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#academia">Research</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#ai-projects">AI Systems</a></li>
-                <li><a href="#contact" class="btn-primary btn-small">Let's Talk</a></li>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">M. Qasim Ayub</a>
+      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+      <nav id="site-nav" class="nav" aria-label="Primary">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#ongoing">Ongoing research</a>
+        <a href="#studies">Studies</a>
+        <a href="#industry">Industry work</a>
+        <a href="#experience">Experience</a>
+        <a class="nav-cv" href="assets/Qasim_CV.pdf" target="_blank" rel="noreferrer">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Intro -->
+    <section class="intro container">
+      <aside class="profile">
+        <figure class="portrait">
+          <img src="assets/images/profile-web.jpg" alt="Portrait of Muhammad Qasim Ayub" width="900" height="900">
+        </figure>
+        <dl class="facts">
+          <div><dt>Location</dt><dd>Lahore, Pakistan</dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:27100168@lums.edu.pk">27100168@lums.edu.pk</a></dd></div>
+          <div><dt>Interests</dt><dd><ul class="chips"><li>Vision-language models</li><li>Test-time scaling</li><li>Interpretability</li><li>Computational biology</li><li>Federated learning</li><li>AI for health</li><li>Human-computer interaction</li></ul></dd></div>
+        </dl>
+      </aside>
+      <div class="intro-copy">
+        <h1>Muhammad Qasim Ayub</h1>
+        <p class="role">Undergraduate Researcher · Computer Science, <a href="https://lums.edu.pk" target="_blank" rel="noreferrer">LUMS</a></p>
+        <p>I am a final-year undergraduate in Computer Science at the Lahore University of Management Sciences (LUMS), where I hold a 3.98 CGPA and a merit scholarship awarded to the top 2% of my class. My research focuses on the reliability of machine learning systems: whether a vision-language model’s answer is <em>grounded</em> in visual evidence rather than merely confident, what drives model predictions of protein modifications, and how models can recognize unfamiliar inputs when training data is distributed across heterogeneous clients.</p>
+        <p>My recent paper, <a href="#publications">VisConf</a>, was accepted at the NeurIPS 2026 Workshop on Grounded and Faithful Vision-Language Models for Real-World Deployment (VLM4RWD). It introduces a training-free method that weights sampled answers by their visual groundedness and calibrated confidence, making test-time scaling in vision-language models more reliable. My current work studies the mechanisms behind post-translational modification predictors and the role of latent-space augmentation in open-set recognition for federated learning.</p>
+        <p>Beyond machine learning, I work in human-computer interaction on making technology accessible to a wider range of users. I developed <a href="https://qasimayub.github.io/Enviromon/" target="_blank" rel="noreferrer">Enviromon</a>, a bilingual (English and Urdu) educational game that teaches children in Pakistan about environmental issues through short missions built on familiar game mechanics.</p>
+        <p>At LUMS, I am a teaching assistant for Advanced Topics in Machine Learning. I previously served as a teaching assistant for the graduate Deep Learning course in the MS AI program, where I designed assignments on model interpretability and built an automated grading leaderboard for 100+ students.</p>
+        <p class="seeking">I am seeking graduate research positions in reliable multimodal learning and in machine learning for biology and health.</p>
+        <ul class="links">
+          <li><a href="mailto:27100168@lums.edu.pk">Email</a></li>
+          <li><a href="assets/Qasim_CV.pdf" target="_blank" rel="noreferrer">CV</a></li>
+          <li><a href="https://openreview.net/forum?id=FdvdQ3Rw8P" target="_blank" rel="noreferrer">OpenReview</a></li>
+          <li><a href="https://github.com/qasimayub" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/-qasimayub/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section class="container section" aria-labelledby="news-title">
+      <h2 id="news-title">News</h2>
+      <ul class="news">
+        <li><time>Dec 2026</time><p><strong>Paper accepted.</strong> <a href="#publications">VisConf</a> will appear at the <a href="https://vlm4rwd.github.io/" target="_blank" rel="noreferrer">NeurIPS 2026 Workshop on Grounded and Faithful Vision-Language Models for Real-World Deployment (VLM4RWD)</a> in Sydney.</p></li>
+        <li><time>2026</time><p>Teaching Assistant for Advanced Topics in Machine Learning at LUMS.</p></li>
+        <li><time>2026</time><p><a href="#industry">Mederium</a> launched with its first partner clinics in Lahore.</p></li>
+        <li><time>2025</time><p><strong>Convenor, PsiFi.</strong> Led Pakistan’s largest science event, with more than 1,500 delegates, and introduced IOAA scholarships to broaden students’ access to opportunities that remain limited in Pakistan.</p></li>
+      </ul>
+    </section>
+
+    <!-- Research interests -->
+    <section id="research" class="container section" aria-labelledby="research-title">
+      <h2 id="research-title">Research</h2>
+      <div class="interests">
+        <div><h3>Reliable multimodal reasoning</h3><p>Test-time scaling and answer selection in vision-language models, using signals of visual groundedness and calibrated confidence.</p></div>
+        <div><h3>Machine learning for biology</h3><p>Structure-aware, interpretable models for predicting post-translational modification sites in proteins.</p></div>
+        <div><h3>Open-world and federated learning</h3><p>Open-set recognition under client heterogeneity, and the representation geometry that supports it.</p></div>
+      </div>
+    </section>
+
+    <!-- Publications & ongoing work -->
+    <section id="publications" class="container section" aria-labelledby="pub-title">
+      <h2 id="pub-title">Publications</h2>
+
+      <article class="pub">
+        <div class="pub-figure" aria-hidden="true">
+          <svg viewBox="0 0 640 460" role="presentation">
+            <rect class="f-box" x="34" y="170" width="120" height="120" rx="12"/>
+            <path class="f-fill" d="M50 266l34-44 22 26 18-20 26 38z"/><circle class="f-accent" cx="122" cy="204" r="10"/>
+            <g class="f-edge"><path d="M154 230C230 230 220 70 300 70"/><path d="M154 230C230 230 230 150 300 150"/><path d="M154 230H300"/><path d="M154 230C230 230 230 310 300 310"/><path d="M154 230C230 230 220 390 300 390"/></g>
+            <g class="f-roll">
+              <rect x="300" y="52" width="150" height="36" rx="8"/><text x="316" y="76">A</text><rect class="f-bar" x="344" y="66" width="90" height="8" rx="2"/>
+              <rect x="300" y="132" width="150" height="36" rx="8"/><text x="316" y="156">B</text><rect class="f-bar f-low" x="344" y="146" width="26" height="8" rx="2"/>
+              <rect x="300" y="212" width="150" height="36" rx="8"/><text x="316" y="236">A</text><rect class="f-bar" x="344" y="226" width="74" height="8" rx="2"/>
+              <rect x="300" y="292" width="150" height="36" rx="8"/><text x="316" y="316">B</text><rect class="f-bar f-low" x="344" y="306" width="18" height="8" rx="2"/>
+              <rect x="300" y="372" width="150" height="36" rx="8"/><text x="316" y="396">B</text><rect class="f-bar f-low" x="344" y="386" width="30" height="8" rx="2"/>
+            </g>
+            <g class="f-edge"><path d="M450 70C510 70 500 230 540 230"/><path d="M450 150C510 150 500 230 540 230"/><path d="M450 230H540"/><path d="M450 310C510 310 500 230 540 230"/><path d="M450 390C510 390 500 230 540 230"/></g>
+            <circle class="f-out" cx="572" cy="230" r="32"/><text class="f-out-text" x="572" y="238">A</text>
+            <text class="f-label" x="94" y="320">image + question</text><text class="f-label" x="375" y="440">N rollouts, scored</text><text class="f-label" x="572" y="290">RWC</text>
+          </svg>
+        </div>
+        <div class="pub-body">
+          <p class="pub-badges"><span class="badge badge-accepted">Accepted</span><span class="badge">NeurIPS 2026 Workshop</span></p>
+          <h3><a href="https://openreview.net/forum?id=FdvdQ3Rw8P" target="_blank" rel="noreferrer">VisConf: Quality-Aware Consensus for Best-of-N in Vision-Language Model Reasoning</a></h3>
+          <p class="authors">Muhammad Usman, <strong>Muhammad Qasim Ayub</strong>, Usman Ahad, Muhammad Tahir</p>
+          <p class="venue"><em>NeurIPS 2026 Workshop on Grounded and Faithful Vision-Language Models for Real-World Deployment (VLM4RWD)</em>, Sydney, 2026</p>
+          <p class="abstract">Best-of-N sampling improves vision-language reasoning, but majority voting treats every sampled answer as equally trustworthy, even when a rollout ignores the image or the model is uncertain. We propose a quality-aware alternative that requires no retraining.</p>
+          <ul class="points">
+            <li><strong>VisConf score.</strong> Scores each reasoning rollout by combining visual groundedness, measured from the model’s attention to image tokens, with confidence measured by D<sub>KL</sub>(U‖p) over the output distribution.</li>
+            <li><strong>Rank-Weighted Consensus (RWC).</strong> Combines VisConf scores with answer agreement, so that the final answer across up to 32 rollouts is chosen by quality-aware voting rather than frequency alone.</li>
+            <li><strong>Verifier-free and training-free.</strong> Evaluated on Qwen2.5-VL-3B and InternVL3-8B across MathVerse, MathVista, MMMU-Pro and MMStar, with 8, 16 and 32 rollouts.</li>
+          </ul>
+          <p class="pub-links">
+            <a href="https://openreview.net/forum?id=FdvdQ3Rw8P" target="_blank" rel="noreferrer">OpenReview</a>
+            <a href="https://neurips.cc/virtual/2026/165019" target="_blank" rel="noreferrer">NeurIPS page</a>
+            <a href="https://vlm4rwd.github.io/" target="_blank" rel="noreferrer">Workshop</a>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Ongoing research -->
+    <section id="ongoing" class="container section" aria-labelledby="ongoing-title">
+      <h2 id="ongoing-title">Ongoing research</h2>
+
+      <article class="pub">
+        <div class="pub-figure" aria-hidden="true">
+          <svg viewBox="0 0 700 520" role="presentation"><path class="f-strand" d="M72 103C190 14 286 189 382 118S558 49 633 161C701 263 526 289 486 381S287 505 244 390 55 358 101 249 210 184 72 103Z"/><path class="f-strand f-strand-b" d="M132 422c63-87 119-2 180-73s19-166 112-171 77 107 166 113"/><g class="f-node"><circle cx="72" cy="103" r="9"/><circle cx="204" cy="93" r="7"/><circle cx="382" cy="118" r="11"/><circle cx="633" cy="161" r="8"/><circle cx="486" cy="381" r="12"/><circle cx="244" cy="390" r="8"/><circle cx="101" cy="249" r="7"/></g></svg>
+        </div>
+        <div class="pub-body">
+          <p class="pub-badges"><span class="badge badge-progress">In progress</span><span class="badge">Computational biology</span></p>
+          <h3>Mechanistic Interpretability for Post-Translational Modification Prediction</h3>
+          <h4>Motivation</h4>
+          <p>Post-translational modifications (PTMs), such as phosphorylation, switch protein function on and off, and their misregulation is linked to disease. Because mapping PTM sites experimentally is slow and expensive, computational predictors are widely used. Recent methods such as SAPP and GraphPhos perform well, but <em>why</em> they work remains unclear, which limits how they can be improved.</p>
+          <h4>Approach</h4>
+          <ul class="points">
+            <li><strong>Faithful baselines.</strong> Reproduce SAPP and GraphPhos under a shared evaluation protocol so that later gains can be attributed to specific design choices.</li>
+            <li><strong>Sequence and structure together.</strong> A general pipeline that predicts PTMs from raw protein sequence, using protein language model embeddings, and from residue-level structural context.</li>
+            <li><strong>Beyond solvent accessibility.</strong> Replace summaries based only on relative solvent accessibility (RSA) with contact graphs, structure-availability masks and confidence-aware geometry, so that uncertain predicted structures are not treated as ground truth.</li>
+            <li><strong>Mechanistic analysis.</strong> Probe trained models to identify which sequence motifs and structural signals drive their predictions, and use these signals to design more accurate and robust architectures.</li>
+          </ul>
+          <h4>Open questions</h4>
+          <p>Which signals drive accurate PTM-site prediction: local sequence motifs, solvent exposure, or a residue’s 3D neighborhood? Do these mechanisms hold across modification types?</p>
+          <p class="keywords">Protein language models · Graph neural networks · Structural bioinformatics · Interpretability</p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-figure" aria-hidden="true">
+          <svg viewBox="0 0 520 300" role="presentation">
+            <circle class="f-zone" cx="140" cy="110" r="64"/><circle class="f-zone" cx="380" cy="100" r="58"/><circle class="f-zone" cx="260" cy="230" r="54"/>
+            <g class="f-node f-small"><circle cx="122" cy="96" r="5"/><circle cx="150" cy="128" r="5"/><circle cx="160" cy="92" r="5"/><circle cx="392" cy="86" r="5"/><circle cx="364" cy="112" r="5"/><circle cx="398" cy="118" r="5"/><circle cx="246" cy="222" r="5"/><circle cx="276" cy="244" r="5"/><circle cx="270" cy="212" r="5"/></g>
+            <g class="f-proto"><rect x="134" y="104" width="12" height="12"/><rect x="374" y="94" width="12" height="12"/><rect x="254" y="224" width="12" height="12"/></g>
+            <g class="f-neg"><path d="M254 128l10 10m0-10l-10 10"/><path d="M224 160l10 10m0-10l-10 10"/><path d="M292 152l10 10m0-10l-10 10"/><path d="M262 90l10 10m0-10l-10 10"/></g>
+          </svg>
+        </div>
+        <div class="pub-body">
+          <p class="pub-badges"><span class="badge badge-progress">In progress</span><span class="badge">Open-world learning</span></p>
+          <h3>Open-Set Recognition in Federated Learning</h3>
+          <h4>Motivation</h4>
+          <p>Deployed classifiers inevitably encounter inputs from classes unseen during training. Federated learning compounds the problem: each client observes a skewed subset of classes, data cannot be pooled, and no single client has a clear picture of what “unknown” looks like. Models must therefore reject unknown inputs while remaining accurate on known classes.</p>
+          <h4>Approach</h4>
+          <ul class="points">
+            <li><strong>Synthetic negatives in latent space.</strong> Augmentations of known-class features generate synthetic negative examples, providing a training signal for “unknown” without real outlier data.</li>
+            <li><strong>Equal-affinity regularizer.</strong> A KL-divergence term encourages each synthetic negative to have equal affinity to every learned class prototype, placing unknowns away from all known classes rather than near any one of them.</li>
+            <li><strong>Discriminative-subspace hypothesis.</strong> A proposed explanation for why some latent augmentations improve open-set recognition while others do not: they help when they act along the directions that separate classes.</li>
+          </ul>
+          <h4>Open questions</h4>
+          <p>Which representation directions matter most for separating known from unknown inputs, and how does client heterogeneity change them? Answering these questions should allow augmentations to be designed in a principled way rather than found by trial and error.</p>
+          <p class="keywords">Federated learning · Open-set recognition · Prototype learning · Representation analysis</p>
+        </div>
+      </article>
+
+      <h3 class="subhead">Human-computer interaction</h3>
+
+      <article class="pub">
+        <a class="pub-figure pub-shot" href="https://qasimayub.github.io/Enviromon/" target="_blank" rel="noreferrer" aria-label="Play Enviromon in a new tab">
+          <div class="shot"><img data-site="https://qasimayub.github.io/Enviromon/" alt="Live preview of the Enviromon game" loading="lazy" width="1280" height="800"><span class="shot-fallback">Enviromon</span></div>
+        </a>
+        <div class="pub-body">
+          <p class="pub-badges"><span class="badge badge-accepted">Live</span><span class="badge">Human-computer interaction</span></p>
+          <h3><a href="https://qasimayub.github.io/Enviromon/" target="_blank" rel="noreferrer">Enviromon: Game-Based Environmental Learning for Children in Pakistan</a></h3>
+          <h4>Motivation</h4>
+          <p>Smog, river pollution and habitat loss directly affect children in Pakistan, yet most learning material on these topics is text-heavy and available only in English. We asked how familiar game mechanics could make environmental issues engaging and accessible to young children.</p>
+          <h4>Design</h4>
+          <ul class="points">
+            <li><strong>Mechanics that mirror the problem.</strong> An explorable pixel-art world with nine missions, each mapping an environmental issue to a classic arcade mechanic: clearing smog clouds, sorting landfill waste, routing pipes to seal a factory leak, and a Flappy Bird-style bee flight through pesticide clouds.</li>
+            <li><strong>Learning before play.</strong> Each mission begins by explaining the issue, why it is harmful and how to play. Wildlife rescue missions, featuring species such as the snow leopard and the dolphin, combine short quizzes with animals children recognize.</li>
+            <li><strong>Accessible by design.</strong> Fully bilingual in English and Urdu, playable on mobile devices with an on-screen joystick, and supported by coins, XP and badges to sustain motivation.</li>
+          </ul>
+          <p class="pub-links">
+            <a href="https://qasimayub.github.io/Enviromon/" target="_blank" rel="noreferrer">Play Enviromon</a>
+            <a href="https://github.com/qasimayub/Enviromon" target="_blank" rel="noreferrer">Source code</a>
+          </p>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Studies -->
+    <section id="studies" class="container section" aria-labelledby="studies-title">
+      <h2 id="studies-title">Studies and reproductions</h2>
+      <p class="section-note">Controlled studies from coursework in Deep Vision-Language Models and Advanced Topics in Machine Learning, with code.</p>
+      <ul class="studies">
+        <li><a href="https://github.com/qasimayub/LLM_Decoding_Alignment_Interpretabiltiy" target="_blank" rel="noreferrer">Post-training, decoding and interpretability</a><span>SFT, PPO, DPO, GRPO and RLVR; how training objectives and decoding strategies shape model behavior.</span></li>
+        <li><a href="https://github.com/qasimayub/DDPM" target="_blank" rel="noreferrer">Denoising diffusion from scratch</a><span>DDPM implementation with ablations and a DDIM extension.</span></li>
+        <li><a href="https://github.com/qasimayub/ATML-DA-and-DG" target="_blank" rel="noreferrer">Domain adaptation and generalization</a><span>DAN, DANN, CDAN, IRM, SAM and CLIP prompt tuning under distribution shift.</span></li>
+        <li><a href="https://github.com/qasimayub/ATML-FL" target="_blank" rel="noreferrer">Federated learning under heterogeneity</a><span>FedAvg, FedProx, FedDyn and FedSAM under label skew and client heterogeneity.</span></li>
+        <li><a href="https://github.com/qasimayub/ATML-Model-Compression" target="_blank" rel="noreferrer">Model compression</a><span>Pruning, knowledge distillation and bf16 / int8 / int4 quantization.</span></li>
+      </ul>
+    </section>
+
+    <!-- Industry work -->
+    <section id="industry" class="case" aria-labelledby="industry-title">
+      <div class="container">
+        <h2 id="industry-title" class="case-h2">Industry work</h2>
+        <p class="kicker">Project and research · Health technology</p>
+        <h3 class="case-title">Mederium: patient experience and clinical data quality in Pakistan</h3>
+        <p class="case-lead">Mederium is a subsidized health-technology platform for clinics in Pakistan, designed for patients and doctors who may have limited experience with digital tools. It also serves as a research setting for studying what improves patient satisfaction and how structured clinical data can be collected during routine visits.</p>
+
+        <div class="case-body">
+          <a class="browser" href="https://mederium.com" target="_blank" rel="noreferrer" aria-label="Open mederium.com in a new tab">
+            <div class="browser-bar"><i></i><i></i><i></i><span>mederium.com</span><b>Live</b></div>
+            <div class="shot shot-wide">
+              <img data-site="https://mederium.com/" alt="Live preview of the mederium.com homepage" loading="lazy" width="1280" height="800">
+              <span class="shot-fallback">mederium.com</span>
+            </div>
+          </a>
+          <div class="case-text">
+            <h3>Research questions</h3>
+            <ul class="points">
+              <li>Do direct booking, accurate answers to patient questions and automated follow-ups improve satisfaction and continuity of care?</li>
+              <li>Can voice-first documentation make clinical records more complete without adding to a doctor’s workload?</li>
             </ul>
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
+            <h3>System</h3>
+            <ul class="points">
+              <li><strong>Structured records by voice.</strong> Doctors dictate in Urdu, English or both, and the system drafts an ICD-10-coded record for the doctor to review.</li>
+              <li><strong>Grounded assistance.</strong> A patient assistant answers from each clinic’s own knowledge base, on the web and on WhatsApp, while a doctor copilot acts only after explicit confirmation.</li>
+            </ul>
+          </div>
         </div>
-    </nav>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero">
-            <div class="hero-content fade-in-up">
-                <span class="greeting">Hi, I'm Qasim 👋</span>
-                <h1 class="hero-title">Crafting <span class="gradient-text">Intelligent</span><br>Software Solutions</h1>
-                <p class="hero-subtitle">CS Junior from LUMS with deep expertise in Machine Learning research, Agentic AI, and Full-Stack Development.</p>
-                <div class="hero-cta">
-                    <a href="#academia" class="btn-primary">View My Research</a>
-                    <a href="#contact" class="btn-secondary">Contact Me</a>
-                </div>
-            </div>
-            <div class="hero-image-wrapper fade-in-up" style="animation-delay: 0.2s;">
-                <div class="image-border">
-                    <img src="assets/images/profile.jpg" alt="M. Qasim Ayub" class="hero-image">
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about scroll-reveal">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <div class="title-line"></div>
-            </div>
-            <div class="about-content glass-card">
-                <div>
-                    <p>I am a research-driven Software Engineer with a passion for Machine Learning and AI. I am a CS Junior at LUMS as a Merit Scholarship Recipient, with advanced coursework spanning ML, AI Foundations, Deep Vision-Language Models, and more.</p>
-                    <p>Professionally, I've built Power BI dashboards analysing 100,000+ properties at DevClan, developed responsive CRM tools for the US-based mortgage company LendingPad, and served as a Teaching Assistant at LUMS for Deep Learning for MS AI students.</p>
-                </div>
-                <div class="stats">
-                    <div class="stat-item">
-                        <span class="stat-num">3.98</span>
-                        <span class="stat-label">CGPA (LUMS)</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-num">Top 2%</span>
-                        <span class="stat-label">Merit Scholarship</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Industry & Personal Projects Section -->
-        <section id="projects" class="projects scroll-reveal">
-            <div class="section-header">
-                <h2 class="section-title">Industry & Personal Projects</h2>
-                <div class="title-line"></div>
-            </div>
-            
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card glass-card">
-                    <div class="project-image-container">
-                        <img src="assets/images/mederium.png" alt="Decentralized Healthcare" loading="lazy">
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">Mederium</h3>
-                        <p class="project-description">Platform for doctors and hospitals to conduct secure, commission-free consultations. Features Voice AI that lets doctors dictate a simple voice note and automatically generates a complete, structured prescription, segmented into medicines, clinical notes, patient history, and ICD-10 coded diagnoses.</p>
-                        <a href="https://mederium.com" class="card-repo-link" target="_blank">
-                            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                            Visit Website
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 2: Technovate -->
-                <div class="project-card glass-card">
-                    <div class="project-image-container">
-                        <img src="assets/images/technovate.png" alt="Technovate Global" loading="lazy">
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">Technovate Global</h3>
-                        <p class="project-description">Designed and developed the marketing website for Technovate Global, a software house offering custom software development, AI solutions, and digital transformation services to clients worldwide.</p>
-                        <a href="https://technovateglobal.com" class="card-repo-link" target="_blank">
-                            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                            Visit Website
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 3: Dewdrop -->
-                <div class="project-card glass-card">
-                    <div class="project-image-container">
-                        <img src="assets/images/dewdrop.png" alt="Dewdrop Skincare" loading="lazy">
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">Dewdrop</h3>
-                        <p class="project-description">Built the full e-commerce platform for Dewdrop, a Pakistani skincare brand, including a product storefront, shopping cart, Cash on Delivery checkout flow, order management, and a custom admin panel for inventory, order tracking, and customer data.</p>
-                        <a href="https://dewdrop.life" class="card-repo-link" target="_blank">
-                            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                            Visit Website
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- AI Industry Projects Section -->
-        <section id="ai-projects" class="ai-projects scroll-reveal">
-            <div class="section-header">
-                <h2 class="section-title">AI Industry Projects</h2>
-                <div class="title-line"></div>
-            </div>
-
-            <div class="ai-projects-list">
-
-                <!-- Recruiter+ -->
-                <div class="ai-project-card glass-card">
-                    <div class="ai-project-header">
-                        <h3 class="project-title">Recruiter+</h3>
-                        <span class="ai-type-badge">AI Hiring Assistant · RAG Pipeline</span>
-                    </div>
-                    <p class="project-description">End-to-end AI recruitment platform with a dual-database architecture (PostgreSQL + Qdrant) that ingests CVs asynchronously, performs semantic search, and synthesises explainable recruiter insights — with automated LinkedIn enrichment running entirely in the background.</p>
-                    <div class="ai-project-divider"></div>
-                    <div class="ai-project-body">
-                        <div class="ai-highlights">
-                            <h4>Architecture Highlights</h4>
-                            <ul>
-                                <li>Async ingestion: PDF → LlamaParse → LLM JSON extraction → dual-DB indexing in seconds</li>
-                                <li>Real-time pipeline for individual uploads; Batch pipeline groups 500 CVs per job via OpenAI Batch API, cutting LLM costs by 50%</li>
-                                <li>Section-aware chunking (MarkdownHeaderTextSplitter) + entity resolution assigns one <code>candidate_id</code> across multiple CV variants</li>
-                                <li>Oversampling & deduplication: queries top-50 chunks from Qdrant, deduplicates to top-5 unique humans by <code>candidate_id</code></li>
-                                <li>Small-to-Big retrieval: chunk-level semantic precision → full CV + LinkedIn fetched from Postgres for explainable LLM synthesis with inline citations</li>
-                                <li>Automated LinkedIn scraping via Apify triggered on upload; re-scraped on shortlist/profile view and refreshed every 6 months via cron</li>
-                            </ul>
-                        </div>
-                        <div class="ai-tech-col">
-                            <h4>Tech Stack</h4>
-                            <div class="tech-stack">
-                                <span class="tech-chip">LlamaParse</span>
-                                <span class="tech-chip">GPT-4o-mini</span>
-                                <span class="tech-chip">OpenAI Embeddings</span>
-                                <span class="tech-chip">PostgreSQL</span>
-                                <span class="tech-chip">Qdrant</span>
-                                <span class="tech-chip">Apify</span>
-                                <span class="tech-chip">AWS S3</span>
-                                <span class="tech-chip">AWS SQS</span>
-                                <span class="tech-chip">AWS Lambda</span>
-                                <span class="tech-chip">LangChain</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- TaxAiders -->
-                <div class="ai-project-card glass-card">
-                    <div class="ai-project-header">
-                        <h3 class="project-title">TaxAiders</h3>
-                        <span class="ai-type-badge">AI Tax Automation · RAG Pipeline</span>
-                    </div>
-                    <p class="project-description">AI-powered tax automation system for UK clients integrating OCR, a RAG pipeline over UK tax codes and HMRC guidelines, omnichannel support routing, and a compliance engine that flags errors before a human ever sees the file.</p>
-                    <div class="ai-project-divider"></div>
-                    <div class="ai-project-body">
-                        <div class="ai-highlights">
-                            <h4>Architecture Highlights</h4>
-                            <ul>
-                                <li>AWS Textract + custom NER model extracts structured tax variables (National Insurance numbers, income thresholds) from uploaded PDFs</li>
-                                <li>RAG pipeline over UK tax codes (Amazon OpenSearch vector DB) powers a 24/7 multilingual GPT-4o chatbot with client-history context</li>
-                                <li>AI Compliance Engine: deterministic rule-based Python for hard thresholds + LLM for semantic gap detection ("missing utility bill for home office claim")</li>
-                                <li>Smart escalation: AI triage → Zendesk routing → live agent receives drafted AI response + client issue summary for fast resolution</li>
-                                <li>Proactive upsell alerts: Dynamic Tax Calculator triggers Salesforce notification when a client qualifies for a tax optimisation strategy</li>
-                            </ul>
-                        </div>
-                        <div class="ai-tech-col">
-                            <h4>Tech Stack</h4>
-                            <div class="tech-stack">
-                                <span class="tech-chip">GPT-4o</span>
-                                <span class="tech-chip">OpenAI Embeddings</span>
-                                <span class="tech-chip">AWS Textract</span>
-                                <span class="tech-chip">Amazon OpenSearch</span>
-                                <span class="tech-chip">AWS Lambda</span>
-                                <span class="tech-chip">Salesforce</span>
-                                <span class="tech-chip">Zendesk</span>
-                                <span class="tech-chip">Custom NER</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- AeroSQL -->
-                <div class="ai-project-card glass-card">
-                    <div class="ai-project-header">
-                        <h3 class="project-title">AeroSQL</h3>
-                        <span class="ai-type-badge">NLP-to-SQL · Agentic AI</span>
-                    </div>
-                    <p class="project-description">Next-generation NLP-to-SQL architecture with a semantic prompt cache, RBAC security layer, knowledge graph–powered JOIN accuracy, a self-correcting validation loop, and multi-model routing designed for enterprise-scale concurrent query throughput.</p>
-                    <div class="ai-project-divider"></div>
-                    <div class="ai-project-body">
-                        <div class="ai-highlights">
-                            <h4>Architecture Highlights</h4>
-                            <ul>
-                                <li>HNSW semantic cache: ≥99.9% match → instant return; 90–99% → Query Tweak Agent swaps variables in cached SQL; &lt;90% → full pipeline</li>
-                                <li>RBAC security: cache hits validated in Python against role access matrix; cache misses use Milvus metadata pre-filtering to physically starve the LLM of unauthorised schema</li>
-                                <li>Neo4j knowledge graph stores the ER map of the client DB — guarantees mathematically correct JOIN paths injected directly into the prompt</li>
-                                <li>Multi-model routing: NVIDIA NIM (Llama/Qwen) for lightweight agents (intent, table, column-prune, tweak); GPT-4o strictly for final SQL generation</li>
-                                <li>Self-correcting loop: LangGraph executes SQL as an EXPLAIN query; on error it appends the exact trace and loops GPT-4o to fix its own mistake</li>
-                                <li>K8s HPA scales pods on HTTP traffic spikes; NVIDIA NIM continuous in-flight batching groups concurrent prompts at the token level on-GPU</li>
-                            </ul>
-                        </div>
-                        <div class="ai-tech-col">
-                            <h4>Tech Stack</h4>
-                            <div class="tech-stack">
-                                <span class="tech-chip">GPT-4o</span>
-                                <span class="tech-chip">NVIDIA NIM</span>
-                                <span class="tech-chip">LangChain</span>
-                                <span class="tech-chip">LangGraph</span>
-                                <span class="tech-chip">Milvus</span>
-                                <span class="tech-chip">Neo4j</span>
-                                <span class="tech-chip">PostgreSQL</span>
-                                <span class="tech-chip">FastAPI</span>
-                                <span class="tech-chip">Kubernetes</span>
-                                <span class="tech-chip">SQLAlchemy</span>
-                                <span class="tech-chip">Pydantic v2</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Academia Section -->
-        <section id="academia" class="projects scroll-reveal">
-            <div class="section-header">
-                <h2 class="section-title">Academia & Research</h2>
-                <div class="title-line"></div>
-            </div>
-
-            <!-- Relevant Coursework -->
-            <div class="coursework-container glass-card">
-                <h3>Relevant Coursework</h3>
-                <div class="coursework-grid">
-                    <span class="coursework-chip">Advanced Topics in Machine Learning</span>
-                    <span class="coursework-chip">Foundation of AI and ML</span>
-                    <span class="coursework-chip">Deep Vision-Language Models</span>
-                    <span class="coursework-chip">Algorithms</span>
-                    <span class="coursework-chip">Data Structures</span>
-                    <span class="coursework-chip">Network Centric Computing</span>
-                </div>
-            </div>
-
-            <div class="research-carousel" style="margin-top: 2.5rem;">
-                <div class="carousel-viewport">
-                    <div class="carousel-track" id="researchTrack">
-                        <div class="carousel-slide">
-                            <div class="project-card glass-card">
-                                <div class="project-info">
-                                    <h3 class="project-title">LLMs Alignment & Interpretability</h3>
-                                    <a href="https://drive.google.com/file/d/12OkTkbuaJ3cY_Kwa0Ei8ANWRuMIj-7h2/view" class="research-badge" target="_blank">View Manuscript</a>
-                                    <p class="project-description">Analysis of decoding strategies and alignment algorithms in Large Language Models, with interpretability studies exploring model behaviour and decision-making processes.</p>
-                                    <a href="https://github.com/qasimayub/LLM_Decoding_Alignment_Interpretabiltiy" class="card-repo-link" target="_blank">
-                                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.16-1.1-1.47-1.1-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"></path></svg>
-                                        View Repository
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-slide">
-                            <div class="project-card glass-card">
-                                <div class="project-info">
-                                    <h3 class="project-title">Quantization, Pruning and KD</h3>
-                                    <a href="https://drive.google.com/file/d/1n5PtRXa3tH3fdoNcJMYTQIa17mt-1_Jc/view?usp=sharing" class="research-badge" target="_blank">View Manuscript</a>
-                                    <p class="project-description">Implemented pruning, knowledge distillation, and quantization (bf16, int8, int4). Performed in-depth analysis of the effectiveness of each compression technique on model accuracy and inference speed.</p>
-                                    <a href="https://github.com/qasimayub/ATML-Model-Compression" class="card-repo-link" target="_blank">
-                                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.16-1.1-1.47-1.1-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"></path></svg>
-                                        View Repository
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-slide">
-                            <div class="project-card glass-card">
-                                <div class="project-info">
-                                    <h3 class="project-title">Denoising Diffusion Probabilistic Models</h3>
-                                    <span class="research-badge">N/A</span>
-                                    <p class="project-description">Implemented Denoising Diffusion Probabilistic Models (DDPM) from scratch. Performed ablation studies and extended the implementation to Denoising Diffusion Implicit Models (DDIM).</p>
-                                    <a href="https://github.com/qasimayub/DDPM" class="card-repo-link" target="_blank">
-                                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.16-1.1-1.47-1.1-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"></path></svg>
-                                        View Repository
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-slide">
-                            <div class="project-card glass-card">
-                                <div class="project-info">
-                                    <h3 class="project-title">Domain Adaptation & Generalization</h3>
-                                    <a href="https://drive.google.com/file/d/1snDSYv7AWhGc1WMA92vnHNt5c0ll3335/view" class="research-badge" target="_blank">View Manuscript</a>
-                                    <p class="project-description">Used DAN, DANN, and CDAN for Domain Adaptation with detailed visualisations. Analysed IRM and SAM for Domain Generalisation, comparing with multimodal models like CLIP with prompt tuning.</p>
-                                    <a href="https://github.com/qasimayub/ATML-DA-and-DG" class="card-repo-link" target="_blank">
-                                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.16-1.1-1.47-1.1-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"></path></svg>
-                                        View Repository
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-slide">
-                            <div class="project-card glass-card">
-                                <div class="project-info">
-                                    <h3 class="project-title">Federated Learning in Heterogeneity</h3>
-                                    <a href="https://drive.google.com/file/d/1OmpKJyf--6SWd-rudZkXM4hJ6_RH7U7A/view" class="research-badge" target="_blank">View Manuscript</a>
-                                    <p class="project-description">Implemented FedAvg and identified label skew issues. Applied FedProx, FedDyn, and FedSAM to mitigate heterogeneity, with thorough accuracy visualisations and efficiency analysis.</p>
-                                    <a href="https://github.com/qasimayub/ATML-FL" class="card-repo-link" target="_blank">
-                                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.16-1.1-1.47-1.1-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"></path></svg>
-                                        View Repository
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-controls">
-                    <button class="carousel-btn carousel-prev" id="researchPrev" aria-label="Previous">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-                    </button>
-                    <button class="carousel-btn carousel-next" id="researchNext" aria-label="Next">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills scroll-reveal">
-            <div class="section-header">
-                <h2 class="section-title">Core Skills</h2>
-                <div class="title-line"></div>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category glass-card">
-                    <h3>Machine Learning & AI</h3>
-                    <ul class="skill-list">
-                        <li>PyTorch & LangChain</li>
-                        <li>RAG & Agentic AI</li>
-                        <li>Model Compression & FL</li>
-                        <li>VAE, CLIP & DDPM</li>
-                        <li>Speech-to-text / TTS</li>
-                    </ul>
-                </div>
-                <div class="skill-category glass-card">
-                    <h3>Languages & Frameworks</h3>
-                    <ul class="skill-list">
-                        <li>Python</li>
-                        <li>C / C++</li>
-                        <li>JavaScript (MERN)</li>
-                        <li>.NET</li>
-                        <li>HTML / CSS</li>
-                    </ul>
-                </div>
-                <div class="skill-category glass-card">
-                    <h3>Tools & Concepts</h3>
-                    <ul class="skill-list">
-                        <li>Git / GitHub</li>
-                        <li>Power BI & Data Analytics</li>
-                        <li>TCP/IP & Sockets</li>
-                        <li>Multithreading</li>
-                        <li>Network Centric Computing</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact scroll-reveal">
-            <div class="glass-card contact-card">
-                <h2>Let's build intelligent systems together</h2>
-                <p>I'm exploring opportunities in AI, Machine Learning, and Software Engineering. Let's start a conversation.</p>
-                <a href="mailto:27100168@lums.edu.pk" class="btn-primary btn-large">Email Me 👋</a>
-                
-                <div class="social-links">
-                    <a href="https://github.com/qasimayub" class="social-icon" aria-label="GitHub" target="_blank">
-                        <!-- GitHub Icon -->
-                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.16-1.1-1.47-1.1-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"></path></svg>
-                    </a>
-                    <a href="https://linkedin.com/in/-qasimayub" class="social-icon" aria-label="LinkedIn" target="_blank">
-                        <!-- LinkedIn Icon -->
-                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 M. Qasim Ayub. All rights reserved.</p>
+        <h3 class="subhead">Applied LLM systems</h3>
+        <div class="cards cards-2">
+          <div class="card">
+            <ol class="pipeline" aria-label="AeroSQL pipeline"><li>Clarify the question</li><li>Retrieve schema</li><li>Generate SQL</li><li>Validate and retry</li><li>Cache and chart</li></ol>
+            <div class="card-body"><p class="card-org">Natural-language analytics</p><h3>AeroSQL</h3><p>Natural-language analytics over airline data, built with FastAPI and LangGraph and secured with role-based access control. Covered by more than 130 tests spanning security, SQL generation, caching, edge cases and concurrency.</p></div>
+          </div>
+          <div class="card">
+            <ol class="pipeline" aria-label="Recruiter+ pipeline"><li>Parse CVs</li><li>Semantic and full-text search</li><li>Reciprocal-rank fusion</li><li>Metadata and recency scoring</li><li>Cross-encoder reranking</li></ol>
+            <div class="card-body"><p class="card-org">Information retrieval</p><h3>Recruiter+</h3><p>Hybrid candidate search over LlamaParse, PostgreSQL and Qdrant that returns evidence-backed matches by combining multiple retrieval signals and reranking them locally.</p></div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Experience -->
+    <section id="experience" class="container section" aria-labelledby="exp-title">
+      <h2 id="exp-title">Experience</h2>
+      <ol class="cv">
+        <li><time>2026 – Present</time><div><h3>Teaching Assistant · Advanced Topics in Machine Learning, LUMS</h3><p>Conduct recitations and office hours; develop and grade assignments, quizzes and technical assessments.</p></div></li>
+        <li><time>Mar – Oct 2026</time><div><h3>GenAI Engineer · <a href="https://www.technovateglobal.com" target="_blank" rel="noreferrer">Technovate Global</a></h3><p>Built retrieval-augmented and multi-agent LLM systems with a focus on reliability, including validation and retry loops, hybrid retrieval with reranking, and extensive testing.</p></div></li>
+        <li><time>Jan – Jun 2026</time><div><h3>Teaching Assistant · Deep Learning (MS AI), LUMS</h3><p>Designed assignments on advanced machine learning algorithms and model interpretability, led recitations, and built a live leaderboard that automated grading for more than 100 students.</p></div></li>
+        <li><time>2025 – 2026</time><div><h3>Convenor · PsiFi, SPADES</h3><p>Led the largest edition of Pakistan’s largest science event, with more than 1,500 delegates. Launched the Psynergy Fair and partnered with Pakistan’s IOAA team to award each of the top 10% of delegates a PKR 50,000 scholarship covering registration and 3–4 months of coaching.</p></div></li>
+        <li><time>Aug – Dec 2025</time><div><h3>Teaching Assistant · Coding for Careers, LUMS</h3><p>Evaluated more than 30 technical interviews and held bi-weekly office hours on interview preparation.</p></div></li>
+        <li><time>Jun – Oct 2025</time><div><h3>Software Engineer &amp; QA · <a href="https://www.linkedin.com/company/devclan/" target="_blank" rel="noreferrer">DevClan</a></h3><p>Built Power BI analytics covering more than 100,000 properties for a US real-estate agency; developed CRM components and performed end-to-end QA for the mortgage platform LendingPad.</p></div></li>
+      </ol>
+
+      <h2 class="h2-follow">Education</h2>
+      <ol class="cv">
+        <li><time>2023 – Present</time><div><h3>Lahore University of Management Sciences (LUMS)</h3><p>BSc Computer Science · 3.98 CGPA · Merit Scholarship (top 2% of class)</p><p class="muted">Coursework: Deep Vision-Language Models, Advanced Topics in ML, Foundations of AI/ML, Agentic AI &amp; LLMOps, Human-Computer Interaction, Algorithms, Data Structures, Network Centric Computing</p></div></li>
+        <li><time>2021 – 2023</time><div><h3>International School Lahore</h3><p>A Levels: 4A* · 100% Merit Scholarship</p></div></li>
+        <li><time>2018 – 2021</time><div><h3>Lahore Grammar School, Johar Town</h3><p>O Levels: 9A* 1A · Distinction in Chemistry</p></div></li>
+      </ol>
+
+      <h2 class="h2-follow">Skills</h2>
+      <p class="skills"><strong>Research:</strong> PyTorch, vision-language models, test-time scaling, attention analysis, mechanistic interpretability, protein language models, graph neural networks, federated learning, domain adaptation, RL post-training, diffusion models, model compression.<br><strong>Engineering:</strong> Python, C++, JavaScript, FastAPI, LangGraph, RAG, PostgreSQL, Qdrant.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Muhammad Qasim Ayub · Lahore, Pakistan</p>
+      <p><a href="mailto:27100168@lums.edu.pk">27100168@lums.edu.pk</a> · <a href="https://github.com/qasimayub" target="_blank" rel="noreferrer">GitHub</a> · <a href="https://www.linkedin.com/in/-qasimayub/" target="_blank" rel="noreferrer">LinkedIn</a> · <a href="#top">Back to top</a></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
