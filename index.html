@@ -43,11 +43,11 @@
       <div class="intro-copy">
         <h1>Muhammad Qasim Ayub</h1>
         <p class="role">Undergraduate Researcher · Computer Science, <a href="https://lums.edu.pk" target="_blank" rel="noreferrer">LUMS</a></p>
+        <p class="seeking">I am seeking <strong>graduate research positions</strong> in reliable multimodal learning and in machine learning for biology and health.</p>
         <p>I am a final-year undergraduate in Computer Science at the Lahore University of Management Sciences (LUMS), where I hold a <strong>3.98 CGPA</strong> and a merit scholarship awarded to the <strong>top 2%</strong> of my class. My research focuses on the <strong>reliability of machine learning systems</strong>: whether a vision-language model’s answer is <em>grounded</em> in visual evidence rather than merely confident, what drives model predictions of protein modifications, and how models can recognize unfamiliar inputs when training data is distributed across heterogeneous clients.</p>
         <p>My recent paper, <a href="#publications"><strong>VisConf</strong></a>, was accepted at the <strong>NeurIPS 2026</strong> Workshop on Grounded and Faithful Vision-Language Models for Real-World Deployment (VLM4RWD). It introduces a training-free method that weights sampled answers by their visual groundedness and calibrated confidence, making test-time scaling in vision-language models more reliable. My current work studies the mechanisms behind <strong>post-translational modification predictors</strong> and the role of latent-space augmentation in <strong>open-set recognition for federated learning</strong>.</p>
         <p>Beyond machine learning, I work in <strong>human-computer interaction</strong> on making technology accessible to a wider range of users. I developed <a href="https://qasimayub.github.io/Enviromon/" target="_blank" rel="noreferrer">Enviromon</a>, a bilingual (English and Urdu) educational game that teaches children in Pakistan about environmental issues through short missions built on familiar game mechanics.</p>
         <p>At LUMS, I am a <strong>teaching assistant</strong> for Advanced Topics in Machine Learning. I previously served as a teaching assistant for the graduate Deep Learning course in the MS AI program, where I designed assignments on model interpretability and built an automated grading leaderboard for 100+ students.</p>
-        <p class="seeking">I am seeking <strong>graduate research positions</strong> in reliable multimodal learning and in machine learning for biology and health.</p>
         <ul class="links">
           <li><a href="mailto:27100168@lums.edu.pk">Email</a></li>
           <li><a href="assets/Qasim_CV.pdf" target="_blank" rel="noreferrer">CV</a></li>
@@ -93,16 +93,17 @@
         </div>
         <div class="pub-body">
           <p class="pub-badges"><span class="badge badge-accepted">Accepted</span><span class="badge">NeurIPS 2026 Workshop</span></p>
-          <h3><a href="https://openreview.net/forum?id=FdvdQ3Rw8P" target="_blank" rel="noreferrer">VisConf: Quality-Aware Consensus for Best-of-N in Vision-Language Model Reasoning</a></h3>
+          <h3><a href="https://arxiv.org/abs/2610.24526" target="_blank" rel="noreferrer">VisConf: Quality-Aware Consensus for Best-of-N in Vision-Language Model Reasoning</a></h3>
           <p class="authors">Muhammad Usman, <strong>Muhammad Qasim Ayub</strong>, Usman Ahad, Muhammad Tahir</p>
           <p class="venue"><em>NeurIPS 2026 Workshop on Grounded and Faithful Vision-Language Models for Real-World Deployment (VLM4RWD)</em>, Sydney, 2026</p>
           <p class="abstract">Best-of-N sampling improves vision-language reasoning, but majority voting treats every sampled answer as equally trustworthy, even when a rollout ignores the image or the model is uncertain. We propose a quality-aware alternative that requires no retraining.</p>
           <ul class="points">
             <li><strong>VisConf score.</strong> Scores each reasoning rollout by combining visual groundedness, measured from the model’s attention to image tokens, with confidence measured by D<sub>KL</sub>(U‖p) over the output distribution.</li>
             <li><strong>Rank-Weighted Consensus (RWC).</strong> Combines VisConf scores with answer agreement, so that the final answer across up to 32 rollouts is chosen by quality-aware voting rather than frequency alone.</li>
-            <li><strong>Verifier-free and training-free.</strong> Evaluated on Qwen2.5-VL-3B and InternVL3-8B across MathVerse, MathVista, MMMU-Pro and MMStar, with 8, 16 and 32 rollouts.</li>
+            <li><strong>Results.</strong> Verifier-free and training-free. Across three VLMs on MathVista, MMMU-Pro and MMStar with 8, 16 and 32 rollouts, VisConf reached 56.36% mean accuracy and outperformed all evaluated baselines in 24 of 27 settings, with the largest gains when correct reasoning paths are outnumbered.</li>
           </ul>
           <p class="pub-links">
+            <a href="https://arxiv.org/abs/2610.24526" target="_blank" rel="noreferrer">arXiv</a>
             <a href="https://openreview.net/forum?id=FdvdQ3Rw8P" target="_blank" rel="noreferrer">OpenReview</a>
             <a href="https://neurips.cc/virtual/2026/165019" target="_blank" rel="noreferrer">NeurIPS page</a>
             <a href="https://vlm4rwd.github.io/" target="_blank" rel="noreferrer">Workshop</a>
