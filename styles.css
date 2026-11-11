@@ -72,6 +72,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .intro h1 { font: 600 2.4rem/1.15 var(--serif); letter-spacing: -.01em; }
 .role { color: var(--muted); font-size: 1rem; margin: .4rem 0 1.4rem; }
 .intro-copy > p { max-width: 68ch; }
+.intro-copy strong { color: var(--ink); font-weight: 600; }
+.intro-copy a strong { color: inherit; }
 .seeking { border-left: 3px solid var(--accent); padding: .1rem 0 .1rem 1rem; color: var(--ink); }
 .links { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.4rem; }
 .links a {
